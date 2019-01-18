@@ -132,9 +132,43 @@ int main()
         }
         if (code == 6)
         {
+            printf("fff\n");
+            int max = 0;
+            for (int i = 0; i < index; i++)
+            {
+                int sum = 0;
+                sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
+
+                if (max < sum)
+                {
+                    max = sum;
+                }
+            }
+            printf("%d\n", max);
+            printf("fff\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 7)
         {
+            printf("ggg\n");
+            double average = 0;
+            double max = 0;
+            for (int i = 0; i < index; i++)
+            {
+
+                average = ((arr[i].yuwen + arr[i].shuxue + arr[i].yingyu)/3);
+                if (max < average)
+                {
+                    max = average;
+                }
+            }
+            printf("%lf\n", max);
+            printf("fff\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 8)
         {
