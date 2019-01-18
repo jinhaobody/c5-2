@@ -114,16 +114,18 @@ int main()
                 sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
                 if (arr[i].yuwen < 60)
                 {
-                    printf("%s yuwen buguo\n", arr[i].xingming);
+                    printf("%s yuwen buguo    ", arr[i].xingming);
                 }
                 if (arr[i].shuxue < 60)
                 {
-                    printf("%s shuxue buguo\n", arr[i].xingming);
+                    printf("%s shuxue buguo    ", arr[i].xingming);
                 }
                 if (arr[i].yingyu < 60)
                 {
-                    printf("%s yingyu buguo\n", arr[i].xingming);
+                    printf("%s yingyu buguo   ", arr[i].xingming);
                 }
+
+                printf("\n");
             }
             printf("eee\n");
             char x;
@@ -154,11 +156,11 @@ int main()
         {
             printf("ggg\n");
             double average = 0;
-            double max = 0;
+            double max = 0.0;
             for (int i = 0; i < index; i++)
             {
 
-                average = ((arr[i].yuwen + arr[i].shuxue + arr[i].yingyu)/3);
+                average = ((arr[i].yuwen + arr[i].shuxue + arr[i].yingyu) / 3.0);
                 if (max < average)
                 {
                     max = average;
@@ -171,6 +173,28 @@ int main()
             scanf("%c", &x);
         }
         if (code == 8)
+        {
+            printf("ggg\n");
+            double average = 0;
+            double max = 0.0;
+            for (int i = 0; i < index; i++)
+            {
+                if (arr[i].yuwen && arr[i].yingyu && arr[i].shuxue <= 60)
+                {
+                    average = ((arr[i].yuwen + arr[i].shuxue + arr[i].yingyu) / 3.0);
+                    if (max < average)
+                    {
+                        max = average;
+                    }
+                }
+            }
+            printf("%lf\n", max);
+            printf("fff\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
+        }
+        if (code == 9)
         {
             printf("hhh\n");
             break;
