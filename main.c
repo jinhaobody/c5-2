@@ -45,13 +45,29 @@ int main()
         }
         if (code == 2)
         {
+            printf("bbb\n");
+            if (index > 0)
+            {
+                index--;
+                printf("bbb\n");
+                char xx;
+                scanf("%c", &xx);
+                scanf("%c", &xx);
+            }
+            else
+            {
+                printf("bbb\n");
+                char xx;
+                scanf("%c", &xx);
+                scanf("%c", &xx);
+            }
         }
         if (code == 3)
         {
             printf("ccc\n");
-            for(int i = 0; i < index; i++)
+            for (int i = 0; i < index; i++)
             {
-                printf("%d %s %d %d %d\n", i + 1,arr[i].xingming, arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
+                printf("%d %s %d %d %d\n", i + 1, arr[i].xingming, arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
             }
             printf("ccc\n");
             char x;
