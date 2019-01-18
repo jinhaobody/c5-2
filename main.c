@@ -9,7 +9,7 @@ struct student
 int main()
 {
     int index = 0;
-    struct student arr[100];
+    struct student arr[10000];
     printf("huanyingjinruxueshengchengjiguanlixitong!\n");
 
     while (1)
@@ -28,6 +28,19 @@ int main()
         scanf("%d", &code);
         if (code == 1)
         {
+            printf("aaa\n");
+            int yuwen;
+            int shuxue;
+            int yingyu;
+            char xingming;
+            scanf("%d", &arr[index].yuwen);
+            scanf("%d", &arr[index].shuxue);
+            scanf("%d", &arr[index].yingyu);
+            scanf("%s", arr[index].xingming);
+            printf("aaa\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 2)
         {
@@ -49,6 +62,8 @@ int main()
         }
         if (code == 8)
         {
+            printf("hhh\n");
+            break;
         }
     }
     return 0;
