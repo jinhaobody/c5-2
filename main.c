@@ -89,7 +89,7 @@ int main()
                 sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
                 if (sum < 180)
                 {
-                    printf("%d %s\n",i+1,arr[i].xingming);
+                    printf("%d %s\n", i + 1, arr[i].xingming);
                     printf("buguo\n");
                     char x;
                     scanf("%c", &x);
@@ -97,7 +97,7 @@ int main()
                 }
                 else
                 {
-                    printf("%d %s\n",i+1,arr[i].xingming);
+                    printf("%d %s\n", i + 1, arr[i].xingming);
                     printf("guo\n");
                     char x;
                     scanf("%c", &x);
@@ -107,6 +107,28 @@ int main()
         }
         if (code == 5)
         {
+            printf("eee\n");
+            for (int i = 0; i < index; i++)
+            {
+                int sum = 0;
+                sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
+                if (arr[i].yuwen < 60)
+                {
+                    printf("%s yuwen buguo\n", arr[i].xingming);
+                }
+                if (arr[i].shuxue < 60)
+                {
+                    printf("%s shuxue buguo\n", arr[i].xingming);
+                }
+                if (arr[i].yingyu < 60)
+                {
+                    printf("%s yingyu buguo\n", arr[i].xingming);
+                }
+            }
+            printf("eee\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 6)
         {
