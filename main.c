@@ -8,6 +8,7 @@ struct student
 };
 int main()
 {
+
     int index = 0;
     struct student arr[10000];
     printf("huanyingjinruxueshengchengjiguanlixitong!\n");
@@ -37,6 +38,7 @@ int main()
             scanf("%d", &(arr[index].shuxue));
             scanf("%d", &(arr[index].yingyu));
             scanf("%s", arr[index].xingming);
+
             printf("aaa\n");
             index++;
             char x;
@@ -67,8 +69,12 @@ int main()
             printf("ccc\n");
             for (int i = 0; i < index; i++)
             {
+                int sum = 0;
+                sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
                 printf("%d %s %d %d %d\n", i + 1, arr[i].xingming, arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
+                printf("%d\n", sum);
             }
+
             printf("ccc\n");
             char x;
             scanf("%c", &x);
@@ -76,6 +82,28 @@ int main()
         }
         if (code == 4)
         {
+            printf("ddd\n");
+            for (int i = 0; i < index; i++)
+            {
+                int sum = 0;
+                sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
+                if (sum < 180)
+                {
+                    printf("%d %s\n",i+1,arr[i].xingming);
+                    printf("buguo\n");
+                    char x;
+                    scanf("%c", &x);
+                    scanf("%c", &x);
+                }
+                else
+                {
+                    printf("%d %s\n",i+1,arr[i].xingming);
+                    printf("guo\n");
+                    char x;
+                    scanf("%c", &x);
+                    scanf("%c", &x);
+                }
+            }
         }
         if (code == 5)
         {
