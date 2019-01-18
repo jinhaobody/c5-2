@@ -33,11 +33,12 @@ int main()
             int shuxue;
             int yingyu;
             char xingming;
-            scanf("%d", &arr[index].yuwen);
-            scanf("%d", &arr[index].shuxue);
-            scanf("%d", &arr[index].yingyu);
+            scanf("%d", &(arr[index].yuwen));
+            scanf("%d", &(arr[index].shuxue));
+            scanf("%d", &(arr[index].yingyu));
             scanf("%s", arr[index].xingming);
             printf("aaa\n");
+            index++;
             char x;
             scanf("%c", &x);
             scanf("%c", &x);
@@ -47,6 +48,15 @@ int main()
         }
         if (code == 3)
         {
+            printf("ccc\n");
+            for(int i = 0; i < index; i++)
+            {
+                printf("%d %s %d %d %d\n", i + 1,arr[i].xingming, arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
+            }
+            printf("ccc\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 4)
         {
